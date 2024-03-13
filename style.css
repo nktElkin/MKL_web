@@ -1,0 +1,162 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --text-accent: #ff000f ; 
+
+}
+
+html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  
+}
+
+body {
+  margin: 0;
+  background-color: beige;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+}
+
+header {
+
+}
+
+.recipes__item > p
+{
+  color: blueviolet;
+} 
+main {
+  
+}
+
+footer {
+  background-color: #23180d;
+  color: #d8d8d8;
+}
+
+ /* -------------- Structure elements --------------  */
+.wrap
+{
+  max-width: 800px;
+  margin: auto;
+}
+
+.segundo_wrap
+{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content_container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  align-content: flex-start;
+}
+
+ /* -------------- Reusable elements --------------  */
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.slider {
+  display: flex; 
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.section__text-accent{
+  display: inline-block;
+}
+.section__text-accent :hover{
+  transition: color 0.3s;
+  color: var(--text-accent);
+  text-decoration: underline;
+}
+
+/* General styles for the page */
+
+
+/* -------------- Recipes container -------------- */
+.recipe__item {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  padding: 5px 20px 20px;
+  max-width: 900px;
+
+  margin-bottom: 20px;
+}
+
+/* Title */
+.recipe__item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Instruction */
+.recipe__item-instruction {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.recipe__instruction {
+  margin: 0;
+}
+
+/* Tags container */
+.recipe__item-tags {
+  display: flex;
+  justify-content: start;
+}
+
+/* Tags container */
+.recipe__item-tags :not(:last-child)
+{
+  margin-right: 5px;
+}
+
+/* Tags */
+.recipe__item-tag {
+  background-color: #d8d8d8;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+/* -------------- Header areas alider -------------- */
+.areas__container {
+
+}
+
+
+
+.slider li a {
+  display: block;
+  text-decoration: none;
+  background-color: #d8d8d8;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px 15px;
+  margin-right: 5px;
+}
+.slider :hover
+{
+  transition: 0.3s;
+  background-color: azure;
+}
+
+
+
