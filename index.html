@@ -41,6 +41,8 @@
                             href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese">Chinese</a></li>
                     <li><a onclick="fetchMealsByAria(this.textContent, event)"
                             href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Croatian">Croatian</a></li </ul>
+                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
+                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Russain">Russian</a></li </ul>
             </div>
         </div>
     </header>
@@ -64,9 +66,6 @@
                     </br>So, let's see what is it... our "JustCookIT"
                 </p>
             </section>
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! is not finished !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! is not finished !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! is not finished !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
             <section id="How_it_works" class="section__container">
                 <h1 class="section__title">How it works?</h1>
                 <p class="section__text">
@@ -85,6 +84,31 @@
             <section style="display: none;" id="meals" class="meals section__container">
                 <h1 class="section__title">Try is next time</h1>
                 <div id="meals_by_area" class="meals__container content_container">
+                    <div class="recipe__item content_container">
+                        <h3 class="recipe__item-title">
+                            Spaghetti Carbonara
+                        </h3>
+                        <div class="recipe__item-instruction">
+                            <p class="recipe__instruction">
+                                Cook spaghetti according to package instructions. 
+                                In a separate bowl, whisk together eggs, grated Parmesan cheese, and black pepper. 
+                                In a skillet, cook diced pancetta until crispy. 
+                                Drain cooked spaghetti and immediately add to the skillet with pancetta, tossing to combine. 
+                                Remove skillet from heat and quickly pour in egg mixture, stirring continuously until eggs thicken but do not scramble. 
+                                Serve immediately with additional grated Parmesan cheese on top.
+                            </p>
+                        </div>
+                        <hr/>
+                        <div class="recipe__item-tags">
+                            <p class="recipe__item-tag tag">
+                                Traditional
+                            </p> 
+                            <p class="recipe__item-tag tag">
+                                Italian
+                            </p>                   
+                        </div>
+                    </div>
+                    
                     <div class="meals__item tag">
                         ${element}
                     </div>

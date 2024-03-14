@@ -103,9 +103,19 @@ a{
 /* General styles for the page */
 
 /* -------------- Navbar styles -------------- */
+header{
+  background-color: azure;
+}
 
 .header__container :not(:last-child){
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+@media (width <= 900px){
+  .segundo_wrap{
+    max-width: 800px;
+  margin: auto;
+  padding: 5% 10%;
+  }
 }
 
 /* Styles for the navigation menu */
@@ -139,6 +149,9 @@ nav a:hover {
 .meals__container :not(:last-child){
   margin-right: 5px;
 }
+.meals__container{
+  padding-bottom: 15px !important;
+}
 
 /* -------------- Recipes container -------------- */
 
@@ -147,7 +160,7 @@ nav a:hover {
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-  padding: 20px 20px 20px;
+  padding: 20px;
   max-width: 900px;
 
   margin-bottom: 20px;
@@ -204,10 +217,10 @@ nav a:hover {
   padding: 5px 15px;
   margin-right: 5px;
 }
-.slider :hover
+.slider li :hover
 {
-  transition: 0.3s;
-  background-color: azure;
+  background-color: #ff000f;
+  transition: all 0.9s;
 }
 
 
