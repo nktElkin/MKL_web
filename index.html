@@ -5,44 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
     <title>JustCookIT</title>
 </head>
 
 <body>
     <header>
-        <div class="segundo_wrap header__container">
-            <div class="logo"></div>
-            <nav>
-                <a href="#About_us">About us</a>
-                <a href="#How_it_works">Easy to start here</a>
-                <a href="#A_few_more">A few more</a>
-            </nav>
-            <div class="header__areas areas__container">
-                <ul class="areas__slider slider">
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian">Canadian</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Dutch">Dutch</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Egyptian">Egyptian</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Filipino">Filipino</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=French">French</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Greek">Greek</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Indian">Indian</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=American">American</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=British">British</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese">Chinese</a></li>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Croatian">Croatian</a></li </ul>
-                    <li><a onclick="fetchMealsByAria(this.textContent, event)"
-                            href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Russain">Russian</a></li </ul>
+        <div class="segundo_wrap header__wrapper">
+            <div class="header__sections">
+                <div class="header__section-upper">
+                    <div class="logo"><h1>JustCookIT</h1></div>
+                    <nav>
+                        <a href="#About_us">About us</a>
+                        <a href="#How_it_works">Easy to start here</a>
+                        <a href="#A_few_more">A few more</a>
+                    </nav>
+                </div>
+                <div class="header-section-slider">
+                    <div class="header__areas areas__container">
+                        <ul class="areas__slider slider">
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian">Canadian</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Dutch">Dutch</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Egyptian">Egyptian</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Filipino">Filipino</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=French">French</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Greek">Greek</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Indian">Indian</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=American">American</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=British">British</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese">Chinese</a></li>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Croatian">Croatian</a></li </ul>
+                            <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Russain">Russian</a></li </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -84,6 +98,38 @@
             <section style="display: none;" id="meals" class="meals section__container">
                 <h1 class="section__title">Try is next time</h1>
                 <div id="meals_by_area" class="meals__container content_container">
+                    <!-- Dynamical content -->
+
+
+                    <!-- ----------------- -->
+                    <div class="meals__item tag">
+                        ${element}
+                    </div>
+                </div>
+            </section>
+            <section style="display: none;" id="recipes" class="recipes section_container">
+                <h1 class="section__title">We found for you something</h1>
+                <div id="fetched_recipes" class="recipes__container">
+                    <!-- Dynamical content -->
+                    <div class="recipe__item content_container">
+                        <h3 class="recipe__item-title">
+                            Burek
+                        </h3>
+                        <div class="recipe__item-instruction">
+                            <p class="recipe__instruction">
+                                Fry the finely chopped onions and minced meat in oil. Add the salt and pepper. Grease a round baking tray and put a layer of pastry in it. Cover with a thin layer of filling and cover this with another layer of filo pastry which must be well coated in oil. Put another layer of filling and cover with pastry. When you have five or six layers, cover with filo pastry, bake at 200ºC/392ºF for half an hour and cut in quarters and serve.
+                            </p>
+                        </div>
+                        <hr/>
+                        <div class="recipe__item-tags">
+                            <p class="recipe__item-tag tag">
+                                Side
+                            </p> 
+                            <p class="recipe__item-tag tag">
+                                Croatian
+                            </p>                   
+                        </div>
+                    </div>
                     <div class="recipe__item content_container">
                         <h3 class="recipe__item-title">
                             Spaghetti Carbonara
@@ -108,72 +154,24 @@
                             </p>                   
                         </div>
                     </div>
-                    
-                    <div class="meals__item tag">
-                        ${element}
-                    </div>
+                    <!-- ----------------- -->
                 </div>
-            </section>
-            <section id="recipes" class="recipes section_container">
-                <h1 class="section__title">We found for you something</h1>
-                <div id="fetched_recipes" class="recipes__container">
-                    <div class="recipe__item content_container">
-                        <h3 class="recipe__item-title">
-                            ${meal.strMeal}
-                        </h3>
-                        <div class="recipe__item-instruction">
-                            <p class="recipe__instruction">
-                                ${meal.strInstructions}
-                            </p>
-                        </div>
-                        <div class="recipe__item-tags">
-                            <p class="recipe__item-tag tag">
-                                ${meal.strCategory}
-                            </p>
-                            <p class="recipe__item-tag tag">
-                                ${meal.strArea}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="recipe__item">
-                        <h3 class="recipe__item-title">
-                            ${meal.strMeal}
-                        </h3>
-                        <div class="recipe__item-instruction">
-                            <p class="recipe__instruction">
-                                ${meal.strInstructions}
-                            </p>
-                        </div>
-                        <div class="recipe__item-tags">
-                            <p class="recipe__item-tag tag">
-                                ${meal.strCategory}
-                            </p>
-                            <p class="recipe__item-tag tag">
-                                ${meal.strArea}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="areas_container" class="areas_container content_container">
-                <a href="#">
-                    <div class="areas__item">
-                        ${area.strArea}
-                    </div>
-                </a>
             </section>
         </div>
     </main>
     <footer>
         <div class="segundo_wrap">
-            <p id="links_to_us">our links</p>
-            <p>our links</p>
-            <p>our links</p>
-            <p>our links</p>
-            <p>our links</p>
+            <div id="links_to_us">
+                <ul>
+                    <li class="mailLink__item-member"><a href="mailto:xkagp001@studenti.czu.cz">Polina Kagarlykskaia</a></li>
+                    <li class="mailLink__item-member"><a href="mailto:xeren003@studenti.czu.cz">Natalia Eremina</a></li>
+                    <li class="mailLink__item-member"><a href="mailto:xelkn001@studenti.czu.cz">Nikita Elkin</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script>
+        //TODO: maybe some count slider for count variable?
         async function fetchRandomRecipes(count = 5) {
             const container = document.getElementById('fetched_recipes'); // Assuming a container element
 
@@ -217,9 +215,7 @@
                 container.innerHTML = '<h2>Error fetching recipes!</h2>';
             }
         }
-        fetchRandomRecipes(); // Call the function to fetch and display recipes
-
-
+        
         async function fetchMealsByAria(content, event) {
             event.preventDefault(); // block redirection after click
 
@@ -257,6 +253,19 @@
             }
             document.getElementById('meals').style.display = "block";
         }
+
+        function showFetchedMealsByArea(content, event){
+            event.preventDefault();
+            if (navigator.onLine) 
+                fetchMealsByAria(content, event)
+            else {
+                window.alert("sorry, no connection...\n let's try nex time :)");
+            }
+        }
+
+
+        fetchRandomRecipes(); // Call the function to fetch and display recipes
+        document.getElementById('recipes').style.display = "block";
 
     </script>
 </body>

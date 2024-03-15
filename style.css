@@ -8,7 +8,10 @@
 }
 
 html {
-  font-family: Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
   height: 100%;
   
 }
@@ -55,8 +58,8 @@ footer {
 .segundo_wrap
 {
   max-width: 1000px;
-  margin: auto;
-  padding: 10px;
+  margin: 0px auto 0px;
+  padding: 10px 5%;
 }
 
 .section_container, recipes__container
@@ -107,15 +110,29 @@ header{
   background-color: azure;
 }
 
-.header__container :not(:last-child){
+.header__wrapper :not(:last-child){
   margin-bottom: 10px;
 }
 @media (width <= 900px){
   .segundo_wrap{
     max-width: 800px;
-  margin: auto;
-  padding: 5% 10%;
+  margin: 0px auto;
+  padding: 10px 10%;
   }
+}
+
+.header__section-upper{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.logo h1{
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* Styles for the navigation menu */
