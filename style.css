@@ -136,13 +136,15 @@ header{
 }
 
 /* Styles for the navigation menu */
-nav {
+nav ul {
   display: flex;
   justify-content: space-around;
   align-items:baseline;
+  flex-direction: row;
+  list-style-type: none;
 }
 
-nav a {
+nav a{
   font-weight: bold;
   padding: 10px 20px;
   transition: all 0.3s ease;
@@ -217,7 +219,6 @@ nav a:hover {
 }
 
 
-
 /* -------------- Header areas alider -------------- */
 .areas__container {
   width: 100%;
@@ -240,5 +241,29 @@ nav a:hover {
   transition: all 0.9s;
 }
 
+/* media  */
+@media (width<=800px) {
+  .header__section-upper{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo{
+    margin: auto;
+  }
+  nav{
+    margin: auto;
+  }
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
+
+.hide_container {
+  display: none; /* Initially hide the recipe__item-tags */
+}
+.recipe__item:hover .hide_container {
+  display: block; /* Show the recipe__item-tags when .recipe__item-container is hovered */
+} 

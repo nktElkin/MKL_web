@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
     <title>JustCookIT</title>
 </head>
@@ -21,24 +22,31 @@
         <div class="segundo_wrap header__wrapper">
             <div class="header__sections">
                 <div class="header__section-upper">
-                    <div class="logo"><h1>JustCookIT</h1></div>
+                    <div class="logo">
+                        <h1>JustCookIT</h1>
+                    </div>
                     <nav>
-                        <a href="#About_us">About us</a>
-                        <a href="#How_it_works">Easy to start here</a>
-                        <a href="#A_few_more">A few more</a>
+                        <ul>
+                            <li><a href="#About_us">About us</a></li>
+                            <li><a href="#How_it_works">Easy to start here</a></li>
+                            <li><a href="#A_few_more">A few more</a></li>
+                        </ul>
                     </nav>
                 </div>
                 <div class="header-section-slider">
                     <div class="header__areas areas__container">
                         <ul class="areas__slider slider">
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
-                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian">Canadian</a></li>
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian">Canadian</a>
+                            </li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
                                     href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Dutch">Dutch</a></li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
-                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Egyptian">Egyptian</a></li>
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Egyptian">Egyptian</a>
+                            </li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
-                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Filipino">Filipino</a></li>
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Filipino">Filipino</a>
+                            </li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
                                     href="https://www.themealdb.com/api/json/v1/1/filter.php?a=French">French</a></li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
@@ -46,15 +54,18 @@
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
                                     href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Indian">Indian</a></li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
-                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=American">American</a></li>
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=American">American</a>
+                            </li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
                                     href="https://www.themealdb.com/api/json/v1/1/filter.php?a=British">British</a></li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
                                     href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese">Chinese</a></li>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
-                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Croatian">Croatian</a></li </ul>
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Croatian">Croatian</a>
+                            </li </ul>
                             <li><a onclick="showFetchedMealsByArea(this.textContent, event)"
-                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Russain">Russian</a></li </ul>
+                                    href="https://www.themealdb.com/api/json/v1/1/filter.php?a=Russain">Russian</a></li
+                                </ul>
                     </div>
                 </div>
             </div>
@@ -90,9 +101,10 @@
                     pleasant appetite.</br>
 
                     Magic happens on this site, or as it is now called processing responses from the server. For these
-                    magical transformations, we need the horn of a single unicorn, and the saliva of a beaver....</br> No,
-                    it's just an open API <span class="section__text-accent"><a
-                        href="https://www.themealdb.com/api.php" target=”_blank”>https://www.themealdb.com/api.php</a></span>
+                    magical transformations, we need the horn of a single unicorn, and the saliva of a beaver....</br>
+                    No,
+                    it's just an open API <span class="section__text-accent"><a href="https://www.themealdb.com/api.php"
+                            target=”_blank”>https://www.themealdb.com/api.php</a></span>
                 </p>
             </section>
             <section style="display: none;" id="meals" class="meals section__container">
@@ -117,17 +129,44 @@
                         </h3>
                         <div class="recipe__item-instruction">
                             <p class="recipe__instruction">
-                                Fry the finely chopped onions and minced meat in oil. Add the salt and pepper. Grease a round baking tray and put a layer of pastry in it. Cover with a thin layer of filling and cover this with another layer of filo pastry which must be well coated in oil. Put another layer of filling and cover with pastry. When you have five or six layers, cover with filo pastry, bake at 200ºC/392ºF for half an hour and cut in quarters and serve.
+                                Fry the finely chopped onions and minced meat in oil. Add the salt and pepper. Grease a
+                                round baking tray and put a layer of pastry in it. Cover with a thin layer of filling
+                                and cover this with another layer of filo pastry which must be well coated in oil. Put
+                                another layer of filling and cover with pastry. When you have five or six layers, cover
+                                with filo pastry, bake at 200ºC/392ºF for half an hour and cut in quarters and serve.
                             </p>
                         </div>
-                        <hr/>
+                        <hr />
                         <div class="recipe__item-tags">
                             <p class="recipe__item-tag tag">
                                 Side
-                            </p> 
+                            </p>
                             <p class="recipe__item-tag tag">
                                 Croatian
-                            </p>                   
+                            </p>
+                        </div>
+                    </div>
+                    <div class="recipe__item content_container" itemscope itemtype="https://schema.org/Recipe">
+                        <h3 class="recipe__item-title" itemprop="name">
+                            Burek
+                        </h3>
+                        <div class="recipe__item-instruction" itemprop="recipeInstructions">
+                            <p class="recipe__instruction">
+                                Fry the finely chopped onions and minced meat in oil. Add the salt and pepper. Grease a
+                                round baking tray and put a layer of pastry in it. Cover with a thin layer of filling
+                                and cover this with another layer of filo pastry which must be well coated in oil. Put
+                                another layer of filling and cover with pastry. When you have five or six layers, cover
+                                with filo pastry, bake at 200ºC/392ºF for half an hour and cut in quarters and serve.
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="recipe__item-tags">
+                            <p class="recipe__item-tag tag" itemprop="recipeCategory">
+                                Side
+                            </p>
+                            <p class="recipe__item-tag tag" itemprop="recipeCuisine">
+                                Croatian
+                            </p>
                         </div>
                     </div>
                     <div class="recipe__item content_container">
@@ -136,22 +175,24 @@
                         </h3>
                         <div class="recipe__item-instruction">
                             <p class="recipe__instruction">
-                                Cook spaghetti according to package instructions. 
-                                In a separate bowl, whisk together eggs, grated Parmesan cheese, and black pepper. 
-                                In a skillet, cook diced pancetta until crispy. 
-                                Drain cooked spaghetti and immediately add to the skillet with pancetta, tossing to combine. 
-                                Remove skillet from heat and quickly pour in egg mixture, stirring continuously until eggs thicken but do not scramble. 
+                                Cook spaghetti according to package instructions.
+                                In a separate bowl, whisk together eggs, grated Parmesan cheese, and black pepper.
+                                In a skillet, cook diced pancetta until crispy.
+                                Drain cooked spaghetti and immediately add to the skillet with pancetta, tossing to
+                                combine.
+                                Remove skillet from heat and quickly pour in egg mixture, stirring continuously until
+                                eggs thicken but do not scramble.
                                 Serve immediately with additional grated Parmesan cheese on top.
                             </p>
                         </div>
-                        <hr/>
+                        <hr />
                         <div class="recipe__item-tags">
                             <p class="recipe__item-tag tag">
                                 Traditional
-                            </p> 
+                            </p>
                             <p class="recipe__item-tag tag">
                                 Italian
-                            </p>                   
+                            </p>
                         </div>
                     </div>
                     <!-- ----------------- -->
@@ -163,7 +204,8 @@
         <div class="segundo_wrap">
             <div id="links_to_us">
                 <ul>
-                    <li class="mailLink__item-member"><a href="mailto:xkagp001@studenti.czu.cz">Polina Kagarlykskaia</a></li>
+                    <li class="mailLink__item-member"><a href="mailto:xkagp001@studenti.czu.cz">Polina Kagarlykskaia</a>
+                    </li>
                     <li class="mailLink__item-member"><a href="mailto:xeren003@studenti.czu.cz">Natalia Eremina</a></li>
                     <li class="mailLink__item-member"><a href="mailto:xelkn001@studenti.czu.cz">Nikita Elkin</a></li>
                 </ul>
@@ -187,24 +229,42 @@
                 for (const response of responses) {
                     const data = await response.json();
                     const meal = data.meals[0];
+                    // new fragment
+
+                    let ingredientsHtml = '';
+                    for (let i = 1; i <= 20; i++) {
+                        const ingredient = meal[`strIngredient${i}`];
+                        const measure = meal[`strMeasure${i}`];
+                        if (ingredient && measure) {
+                            ingredientsHtml += `<p itemprop="recipeIngredient" class="recipe__item-tag tag">${ingredient} - ${measure}</p>`;
+                        }
+                    }
+
+                    // end of new fragmment 
                     recipeHtml.push(`
                     <div class="recipe__item content_container">
                         <h3 class="recipe__item-title">
                             ${meal.strMeal}
                         </h3>
                         <div class="recipe__item-instruction">
-                            <p class="recipe__instruction">
+                            <p itemscope="recipeInstructions" class="recipe__instruction">
                                 ${meal.strInstructions}
                             </p>
                         </div>
-                        <hr/>
-                        <div class="recipe__item-tags">
-                            <p class="recipe__item-tag tag">
-                                ${meal.strCategory}
-                            </p> 
-                            <p class="recipe__item-tag tag">
-                                ${meal.strArea}
-                            </p>                   
+                        <div class="hide_container">
+                            <hr/>
+                            <div class="recipe__item-tags">
+                                <p itemscope="recipeCategory" class="recipe__item-tag tag">
+                                    ${meal.strCategory}
+                                </p> 
+                                <p itemscope="recipeCuisine" class="recipe__item-tag tag">
+                                    ${meal.strArea}
+                                </p>                   
+                            </div>
+                            <hr/>
+                            <div class="recipe__item-tags slider">
+                                ${ingredientsHtml}   
+                            </div>
                         </div>
                     </div>
                     `);
@@ -215,7 +275,7 @@
                 container.innerHTML = '<h2>Error fetching recipes!</h2>';
             }
         }
-        
+
         async function fetchMealsByAria(content, event) {
             event.preventDefault(); // block redirection after click
 
@@ -254,9 +314,9 @@
             document.getElementById('meals').style.display = "block";
         }
 
-        function showFetchedMealsByArea(content, event){
+        function showFetchedMealsByArea(content, event) {
             event.preventDefault();
-            if (navigator.onLine) 
+            if (navigator.onLine)
                 fetchMealsByAria(content, event)
             else {
                 window.alert("sorry, no connection...\n let's try nex time :)");
