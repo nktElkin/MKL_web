@@ -47,6 +47,10 @@ footer {
   color: #d8d8d8;
 }
 
+address{
+  font-style: normal;
+}
+
  /* -------------- Structure elements --------------  */
 .wrap
 {
@@ -92,6 +96,12 @@ a{
   scrollbar-width: none;
   overflow: scroll;
   white-space: nowrap;
+}
+.slider ul{
+  padding: 0px;
+}
+.slider ul li{
+  display: inline;
 }
 
 .section__text-accent{
@@ -295,7 +305,7 @@ nav a:hover {
 }
 
 
-
+/*Styles just for fun*/
 .logo h1 {
   background-image:
     linear-gradient(250deg,
