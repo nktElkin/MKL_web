@@ -1,12 +1,17 @@
 :root {
-  --background-main: beige;
-  --blue: #1e90ff;
+  --background-main: #f2e8e1;
   --tag: #d8d8d8;
-  --white: #ffffff;
-  --text-accent: #ff000f;
+  --text-accent: #7866d1;
+  --footer-bg: #7a695d;
+  --header-bg: #e5d2c4;
 }
 
-html {font-family: "Nunito", sans-serif;font-optical-sizing: auto;font-style: normal;height: 100%;}
+html {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -24,7 +29,7 @@ body {
 } */
 
 footer {
-  background-color: #23180d;
+  background-color: var(--footer-bg);
   color: #d8d8d8;
 }
 
@@ -71,9 +76,12 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  scrollbar-width: none;
   overflow: scroll;
   white-space: nowrap;
+}
+
+.slider::-webkit-scrollbar {
+  display: none
 }
 
 .slider ul {
@@ -89,15 +97,17 @@ a {
 }
 
 .section__text-accent :hover {
-  transition: color 0.3s;
+  transition: all 0.6s;
   color: var(--text-accent);
-  text-decoration: underline;
+  display: inline-block;
+  background-color: var(--tag);
+  border-radius: 5px;
 }
 
 /* General styles for the page */
 /* -------------- Navbar styles -------------- */
 header {
-  background-color: azure;
+  background-color: var(--header-bg);
 }
 
 .header__wrapper :not(:last-child) {
@@ -130,11 +140,11 @@ nav ul {
 nav a {
   font-weight: bold;
   padding: 10px 20px;
-  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #f0f0f0;
+  transition: all 0.3s;
+  background-color: var(--tag);
   /* Change background color on hover */
   border-radius: 5px;
 }
@@ -210,7 +220,7 @@ nav a:hover {
 .slider li a {
   display: block;
   text-decoration: none;
-  background-color: #d8d8d8;
+  background-color: var(--tag);
   border-radius: 5px;
   font-size: 16px;
   padding: 5px 15px;
@@ -218,8 +228,9 @@ nav a:hover {
 }
 
 .slider li :hover {
-  background-color: #ff000f;
-  transition: all 0.9s;
+  color: white;
+  background-color: var(--text-accent);
+  transition: all 0.6s;
 }
 
 @media (width <=900px) {
@@ -269,8 +280,6 @@ nav a:hover {
   }
 }
 
-
-
 .hide_container-tags {
   display: none;
   /* Initially hide the recipe__item-tags */
@@ -278,7 +287,6 @@ nav a:hover {
 
 .recipe__item:hover .hide_container-tags {
   display: block;
-  /*Show the recipe__item-tags when .recipe__item-container is hovered */
 }
 
 .recipe__item-tags li {
@@ -286,18 +294,8 @@ nav a:hover {
   text-decoration: none;
 }
 
-
-/*Styles just for fun*/
-.logo h1 {
-  background-image:
-    linear-gradient(250deg,
-      #E40303 16%,
-      #FF8C00 33%,
-      #FFED00 50%,
-      #008026 66%,
-      #24408E 82.6%,
-      #732982 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+.footer__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
