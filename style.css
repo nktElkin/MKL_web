@@ -40,8 +40,8 @@ address {
 /* -------------- Structure elements --------------  */
 .wrap {
   max-width: 800px;
-  margin: auto;
-  padding: 5% 10%;
+  margin: 0 auto;
+  padding: 2% 10%;
 }
 
 .segundo_wrap {
@@ -299,9 +299,8 @@ nav a:hover {
 }
 
 
-.footer__container{
+.footer__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
