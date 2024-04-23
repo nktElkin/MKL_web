@@ -20,8 +20,8 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  flex: auto 1fr auto;
   min-width: 400px;
+  flex: auto 1fr auto;
 }
 
 /* .recipes__item>p {
@@ -151,7 +151,7 @@ nav a:hover {
 
 .meals__container {
   display: flex;
-  justify-content: strat;
+  justify-content: start;
   align-items: baseline;
   flex-wrap: wrap;
 }
@@ -297,12 +297,11 @@ nav a:hover {
   display: block;
   text-decoration: none;
 }
-<<<<<<< HEAD
+
 
 .footer__container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-=======
->>>>>>> b8fe0d3d7fba7640a3eb680863494c71cc9aba48
+
