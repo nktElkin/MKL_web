@@ -1,0 +1,45 @@
+:root{--background-main:#f2e8e1;--tag:#d8d8d8;--text-accent:#7866d1;--footer-bg:#7a695d;--header-bg:#e5d2c4}
+html{font-family:"Nunito",sans-serif;font-optical-sizing:auto;font-style:normal;height:100%}
+body{margin:0;background-color:var(--background-main);min-height:100%;max-width:100%;display:flex;flex-direction:column;min-width:400px;flex:auto 1fr auto}
+footer{background-color:var(--footer-bg);color:#d8d8d8}
+.wrap{max-width:800px;margin:auto;padding:5% 10%}
+.segundo_wrap{max-width:1000px;margin:0 auto;padding:10px 5%}
+/* -------------- Reusable elements --------------  */
+.section_container.recipes__container{display:flex;flex-direction:row;flex-wrap:wrap;align-content:flex-start}
+a{text-decoration:none;color:inherit;font-style:normal}
+.tag{background-color:var(--tag);border-radius:5px;font-size:12px;padding:5px 10px}
+.slider{display:flex;list-style:none;padding:0;margin:0;overflow:scroll;white-space:nowrap}
+/* Disable scrollbar for webkit */
+.slider::-webkit-scrollbar{display:none}
+.slider ul{padding:0}
+.slider ul li{display:inline}
+.section__text-accent{display:inline-block}
+.section__text-accent :hover{transition:all .6s;color:var(--text-accent);display:inline-block;background-color:var(--tag);border-radius:5px}
+/* General styles for the page */
+/* -------------- Navbar styles -------------- */
+header{background-color:var(--header-bg)}
+.header__wrapper :not(:last-child){margin-bottom:10px}
+.header__section-upper{display:flex;flex-direction:row;align-items:baseline;justify-content:space-between}
+.logo h1{font-family:"Fira Code",monospace;font-optical-sizing:auto;font-weight:500;font-style:normal}
+nav ul{display:flex;justify-content:space-around;align-items:baseline;flex-direction:row;list-style-type:none}
+nav a{font-weight:700;padding:10px 20px}
+nav a:hover{transition:all .3s;background-color:var(--tag);border-radius:5px}
+.meals__container{display:flex;justify-content:start;align-items:baseline;flex-wrap:wrap}
+.meals__item{margin:0 5px 5px}
+.meals__item p{margin:0}
+.meals__container :not(:last-child){margin-right:5px}
+.meals__container{padding-bottom:15px!important}
+.content_container{background-color:#f0f0f0;border-radius:15px;box-shadow:0 4px 6px rgba(0,0,0,0.1);padding:20px;max-width:900px;margin-bottom:20px}
+.recipe__item{padding-top:5px}
+.recipe__item-title{font-size:24px;font-weight:700;margin-bottom:10px}
+.recipe__item-instruction{font-size:14px;margin-bottom:20px}
+.recipe__instruction{margin:0}
+.recipe__item-tags{margin-left:0;padding-left:0;display:flex;justify-content:start}
+.recipe__item-tags :not(:last-child){margin-right:5px}
+.areas__container{width:100%}
+.slider li a{display:block;text-decoration:none;background-color:var(--tag);border-radius:5px;font-size:16px;padding:5px 15px;margin-right:5px}
+.slider li :hover{color:#fff;background-color:var(--text-accent);transition:all .6s}
+.hide_container-tags{display:none}
+.recipe__item:hover .hide_container-tags{display:block}
+.recipe__item-tags li{display:block;text-decoration:none}
+.footer__container{display:flex;flex-direction:row;justify-content:space-between}
