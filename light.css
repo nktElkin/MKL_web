@@ -34,6 +34,7 @@ header{background-color:var(--header-bg)}
 nav ul{display:flex;justify-content:space-around;align-items:baseline;flex-direction:row;list-style-type:none}
 nav a{font-weight:700;padding:10px 20px}
 nav a:hover{transition:all .3s;background-color:var(--tag);border-radius:5px}
+/* -------------- Recipe -------------- */
 .meals__container{display:flex;justify-content:start;align-items:baseline;flex-wrap:wrap}
 .meals__item{margin:0 5px 5px}
 .meals__item p{margin:0}
@@ -56,4 +57,5 @@ nav a:hover{transition:all .3s;background-color:var(--tag);border-radius:5px}
 .hide_container-tags{display:none}
 .recipe__item:hover .hide_container-tags{display:block}
 .recipe__item-tags li{display:block;text-decoration:none}
+/* -------------- Footer -------------- */
 .footer__container{display:flex;flex-direction:row;justify-content:space-between}
